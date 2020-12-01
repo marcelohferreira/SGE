@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SGE - Contas a Receber</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="SGE.jpeg">
+    </link>
+    <link rel="stylesheet" href="contas.css" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="listaReceber.js" defer></script>
+    <script src="tabelaContas.js" defer></script>
+</head>
+
+<body>
+    <link rel="stylesheet" href="contas.css">
+    <h1>Contas a Receber</h1> 
+    <div id=data_pedido>
+        <h3 id="h3">Data da Venda</h3>
+        <div id="col1" >            
+            <label for="data_inicial">Data Inicial</label><br/>
+            <input id="data_inicial" name="data_inicial" type="date"/> 
+        </div>
+        <div id="col1" >
+            <label for="data_final">Data Final</label><br/>
+            <input id="data_final" name="data_final"  type="date"/> 
+        </div>
+        <button type="button" id="btnFiltrar">Filtrar</button>
+    </div>
+    <div>
+        <h3 id="h3">Data Vencimento</h3>
+        <div id="col1" >
+            <label for="data_inicial">Data Inicial</label><br/>
+            <input id="data_inicial" name="data_inicial" type="date"/> 
+        </div>
+        <div id="col1" >
+            <label for="data_final">Data Final</label><br/>
+            <input id="data_final" name="data_final" type="date"/> 
+        </div>
+    </div>
+    <div id="dados4">
+        <section>
+            <table id="tabela">
+            </table>
+        </section>
+        </link>
+</body>
+
+</html>
