@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>SGE - Cadastro Produto Kit</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="SGE.jpeg"></link>
+<link rel="stylesheet" href="index.css">
+<link rel="stylesheet" href="produto.css"/>
+<script language="JavaScript" type="text/JavaScript">
+function close_window() {
+  if (confirm("Deseja realmente Cancelar?")) {
+    close();
+  }
+}
+</script>
+<script src="lista.js" defer></script>
+<script src="tabela.js" defer></script>
+<script language="JavaScript" type="text/JavaScript">
+    <!--
+    function NovaJanela(pagina,nome,w,h,scroll){
+    LeftPosition = (screen.width) ? (screen.width-w)/2 : 0;
+    TopPosition = (screen.height) ? (screen.height-h)/2 : 0;
+    settings = 'height='+h+',width='+w+',top='+TopPosition+',left='+LeftPosition+',scrollbars='+scroll+',resizable'
+    win = window.open(pagina,nome,settings);
+    }
+    //-->
+    </script>
+</head>
+<body>
+        <form> 
+            <link rel="stylesheet" href="produto.css">
+                <h1>Cadastro Do Produto</h1> 
+                <p> 
+                    <label for="nome_produto">Nome do Produto</label> <br />
+                    <input maxlength="100" id="nome_produto" name="nome_produto" required="required" type="text" />
+                </p>
+                <p> 
+                    <label for="descricao">Descricao</label> <br/>
+                    <textArea maxlength="2000" id="descricao" name="descricao" type="text"/></textarea>
+                </p>
+                
+                    <div id="dados1" >
+                        <div id="col1">
+                            <label for="codigo_item">Codigo do item</label><br/>
+                            <input id="codigo_item" name="codigo_item" required="required" type="text"/>
+                        </div>
+                        <div id="col1" >
+                            <label for="marca">Marca</label><br/>
+                            <input id="marca" name="marca" required="required" type="text"/> 
+                        </div>
+                        <div id="col2" >
+                            <label for="valor_venda">Valor de venda</label><br/>
+                            <input id="valor_venda" name="valor_venda" required="required" type="float"/> 
+                        </div>
+                    </div>
+                
+                <p >
+                <div id="dados2">
+                        <div id="col3">
+                            <label for="pesoItem">Peso</label> <br/>
+                            <input id="dimensao" name="pesoItem" required="required" type="float"/>
+                        </div>
+                        <div id="col3">
+                            <label for="altura">Altura</label> <br/>
+                            <input id="dimensao" name="altura" required="required" type="float"/> 
+                        </div>
+                        <div id="col3">
+                            <label for="largura">Largura</label> <br/>
+                            <input id="dimensao" name="largura" required="required" type="float"/>
+                        </div><div id="col3">
+                            <label for="profundidade">Profudindade</label> <br/>
+                            <input id="dimensao" name="profundidade" required="required" type="float"/>
+                        </div>
+                </div>
+                </p>
+                <div id="dados4" >
+                    <button id="adicionar" type="button" onClick="Javascript:NovaJanela('buscarProduto.html','Cadastro Produtos','800','600','no');">+ADICIONAR ITENS</button>
+                    <h3 id="h3">Itens no KIT:</h3>
+                    <section >
+                        <table id="tabela">
+
+                        </table>
+                    </section>
+                </div>
+				<div id="dados3" >
+                    <input type="submit" onclick="cadastroItem.php" value="Confirmar"  />
+                </form>
+                <a id="btn" href="javascript:close_window();">Cancelar</a>
+                </div>
+                
+            </link>
+        
+		
+	</body>
+</html>
