@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SGE - Fornecedores</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="SGE.jpeg">
+    </link>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="produto.css" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="listaFornecedores.js" defer></script>
+    <script src="tabelaCadastros.js" defer></script>
+	  <script language="JavaScript" type="text/JavaScript">
+<!--
+function NovaJanela(pagina,nome,w,h,scroll){
+LeftPosition = (screen.width) ? (screen.width-w)/2 : 0;
+TopPosition = (screen.height) ? (screen.height-h)/2 : 0;
+settings = 'height='+h+',width='+w+',top='+TopPosition+',left='+LeftPosition+',scrollbars='+scroll+',resizable'
+win = window.open(pagina,nome,settings);
+}
+//-->
+</script>
+</head>
+
+<body>
+    <link rel="stylesheet" href="produto.css">
+    <h1>Fornecedores</h1>
+		<button type="button" id="btnIncluir" onClick="Javascript:NovaJanela('CadastroPessoa.html','Cadastro Cliente','800','600','no');">Incluir</button><br/><br/>
+    <div >
+        <input id="busca" type="search" oninput="limpar()"/>
+        <button type="button" id="btnBusca" >Buscar</button><br/>
+
+      </div>
+    <div id="dados4">
+        <section>
+            <table id="tabela">
+            </table>
+        </section>
+        </link>
+</body>
+
+</html>

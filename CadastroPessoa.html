@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>SGE - Cadastro</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="SGE.jpeg"></link>
+<link rel="stylesheet" href="index.css">
+<link rel="stylesheet" href="pessoa.css"/>
+<script language="JavaScript" type="text/JavaScript">
+function close_window() {
+  if (confirm("Deseja realmente Cancelar?")) {
+    close();
+  }
+}
+</script>
+
+</head>
+<body>
+        <form method="post" action="cadastroPessoa.php"> 
+            <link rel="stylesheet" href="pessoa.css">
+                <h1>Cadastro</h1> 
+                <p> 
+                    <label for="nome_pessoa">Nome</label> <br />
+                    <input maxlength="150" id="nome_pessoa" name="nome_pessoa" required="required" type="text" />
+                </p>                 
+                    <div id="dados1" >
+                        <div id="col1">
+                            <label for="documento">CPF/CNPJ</label><br/>
+                            <input id="documento" name="documento" required="required" type="text"/>
+                        </div>
+                        <div id="col1" >
+                            <label for="telefone">Telefone</label><br/>
+                            <input id="telefone" name="telefone" required="required" type="text"/> 
+                        </div>
+                        <div id="col2" >
+                            <label for="tipo_pessoa">Tipo pessoa</label><br/>
+                            <select id="tipo_pessoa" name="tipo_pessoa" >
+							<option value="cliente">Cliente</option>
+							<option value="fornecedor">Fornecedor</option>
+							</select>
+                        </div>
+                    </div>
+                
+                <p >
+                <div id="dados2">
+                    
+                        <div id="col4" >
+                            <label for="rua">Rua</label><br/>
+                            <input id="rua" name="rua" required="required" type="text"/> 
+                        </div>
+						<div id="col5">
+                            <label for="numero">Número</label> <br/>
+                            <input id="numero" name="numero" required="required" type="text"/>
+                        </div>
+				</div>
+				<div id="dados3">
+						<div id="col6">
+                            <label for="complemento">Complemento</label> <br/>
+                            <input id="complemento" name="complemento" required="required" type="text"/>
+                        </div>
+						<div id="col6">
+                            <label for="bairro">Bairro</label> <br/>
+                            <input id="bairro" name="bairro" required="required" type="text"/>
+                        </div>
+				</div>		
+				<div id="dados4">
+						<div id="col1">
+                            <label for="cidade">Cidade</label> <br/>
+                            <input id="cidade" name="cidade" required="required" type="text"/>
+                        </div>
+						<div id="col1">
+                            <label for="estado">Estado</label> <br/>
+                            <input id="estado" name="estado" required="required" type="text"/>
+                        </div>
+						<div id="col3">
+                            <label for="pais">País</label> <br/>
+                            <input id="pais" name="pais" required="required" type="text"/>
+                        </div>
+                </div>
+				</p>
+				<div id="dados5" >
+                    <input type="submit" value="Confirmar"  />
+                </form>
+                    <a id="btn" href="javascript:close_window();">Cancelar</a>
+				</div>
+            </link>
+	</body>
+</html>
