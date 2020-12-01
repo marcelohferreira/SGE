@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SGE - Alteração de Estoque</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="SGE.jpeg">
+    </link>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="estoque.css" />
+    <script language="JavaScript" type="text/JavaScript">
+function close_window() {
+  if (confirm("Deseja realmente Cancelar?")) {
+    close();
+  }
+}
+</script>
+
+</head>
+
+<body>
+    <form method="post" action="alteraEstoque.php">
+        <link rel="stylesheet" href="estoque.css">
+        <h1>Alteração de Estoque</h1>
+        <p>
+            <label for="item">Código do Item</label>
+            <input id="item" name="item" required="required" type="text" />
+        </p>
+        <p>
+            <label for="quantidade">Quantidade</label>
+            <input id="quantidade" name="quantidade" required="required" type="text" />
+        </p>
+        <p>
+            <label for="acao_estoque">Ação</label>
+            <select id="acao_estoque" name="acao_estoque">
+                <option value="adicionar">Adicionar</option>
+                <option value="remover">Remover</option>
+            </select>
+        </p>
+        <p>
+            <input type="submit" value="Confirmar" />
+    <a id="btn" href="javascript:close_window();">Cancelar</a>
+    </p>
+</form>
+    </link>
+</body>
+
+</html>
