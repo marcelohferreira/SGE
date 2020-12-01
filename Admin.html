@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>SGE - Home / Administrador</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="index.css">
+  <link rel="shortcut icon" href="SGE.jpeg">
+  </link>
+  <script language="JavaScript" type="text/JavaScript">
+<!--
+function NovaJanela(pagina,nome,w,h,scroll){
+LeftPosition = (screen.width) ? (screen.width-w)/2 : 0;
+TopPosition = (screen.height) ? (screen.height-h)/2 : 0;
+settings = 'height='+h+',width='+w+',top='+TopPosition+',left='+LeftPosition+',scrollbars='+scroll+',resizable'
+win = window.open(pagina,nome,settings);
+}
+//-->
+</script>
+</head>
+
+<body>
+
+  <div class="navbar">
+    <div class="dropdown">
+      <button class="dropbtn">Produto
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href=""
+          onClick="Javascript:NovaJanela('CadastroProduto.html','Cadastro Produtos','800','600','no');">Cadastro Produto
+          Simples</a>
+        <a href="" onClick="Javascript:NovaJanela('CadastroKit.html','Cadastro Kit','800','600','no');">Cadastro Produto
+          Kit</a>
+        <a href="buscarProduto.html">Consulta do produto</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Vendas
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="buscarPedidos.html">Pedidos de venda</a>
+        <a href="CadastroPedido.html">Novo Pedido</a>
+        <a href="#">Notas Fiscais</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Compras
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="buscarCompras.html">Pedidos de compra</a>
+        <a href="CadastroCompra.html">Novo pedido</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Estoque
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="" onClick="Javascript:NovaJanela('manutencaoEstoque.html','Alterar Estoque','600','400','no');">Editar
+          Estoque</a>
+        <a href="buscarEstoque.html">Consultar estoque</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Cadastros
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="Clientes.html">Clientes</a>
+        <a href="Fornecedores.html">Fornecedores</a>
+        <a href="" onClick="Javascript:NovaJanela('CadastroPessoa.html','Cadastro Cliente','800','600','no');">Cadastrar
+          novo</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Finanças
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="contasPagar.html">Contas a Pagar</a>
+        <a href="contasReceber.html">Contas a Receber</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Relatórios
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="relatorioPedidos.html">Venda</a>
+        <a href="relatorioEstoque.html">Estoque</a>
+        <a href="relatorioProduto.html">Produto</a>
+      </div>
+    </div>
+  </div>
+  <div id=responsive-imgs>
+    <img src="SGE.jpeg">
+  </div>
+</body>
+
+</html>
