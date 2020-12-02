@@ -1,0 +1,1 @@
+let linhasTabela =[[9085562,"Taca Americana 1 unidade",6,"48,90"]]
