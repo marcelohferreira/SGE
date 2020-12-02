@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SGE - Estoque</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="SGE.jpeg">
+    </link>
+    <link rel="stylesheet" href="produto.css" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="listadeEstoque.js" defer></script>
+    <script src="tabelaEstoque.js" defer></script>
+</head>
+
+<body>
+    <link rel="stylesheet" href="produto.css">
+    <h1>Estoque</h1> 
+    <div >
+        <div id="col1" >
+            <label for="data_inicial">Data Inicial</label><br/>
+            <input id="data_inicial" name="data_inicial" required="required" type="date"/> 
+        </div>
+        <div id="col1" >
+            <label for="data_final">Data Final</label><br/>
+            <input id="data_final" name="data_final" required="required" type="date"/> 
+        </div>
+        <button type="button" id="btnFiltrar">Filtrar</button>
+    </div>
+    <div id="dados4">
+        <section>
+            <table id="tabela">
+            </table>
+        </section>
+        </link>
+</body>
+
+</html>
