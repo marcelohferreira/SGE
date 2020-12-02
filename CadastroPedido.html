@@ -1,0 +1,83 @@
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>SGE - Novo Pedido</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="SGE.jpeg"></link>
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="pedido.css"/>
+        <script language="JavaScript" type="text/JavaScript">
+            function close_window() {
+              if (confirm("Deseja realmente Cancelar?")) {
+                close();
+            }
+        }
+    </script>
+    <script src="listaItensPedido.js" defer></script>
+    <script src="tabelaItensPedido.js" defer></script>
+    <script language="JavaScript" type="text/JavaScript">
+        <!--
+            function NovaJanela(pagina,nome,w,h,scroll){
+                LeftPosition = (screen.width) ? (screen.width-w)/2 : 0;
+                TopPosition = (screen.height) ? (screen.height-h)/2 : 0;
+                settings = 'height='+h+',width='+w+',top='+TopPosition+',left='+LeftPosition+',scrollbars='+scroll+',resizable'
+                win = window.open(pagina,nome,settings);
+            }
+        //-->
+    </script>
+</head>
+<body>
+    <form> 
+        <link rel="stylesheet" href="pedido.css">
+        <h1>Novo Pedido</h1> 
+        <p> 
+            <label for="cliente">Cliente</label> <br />
+            <input maxlength="100" id="cliente" name="cliente" required="required" type="text" />
+        </p>
+        <div id="dados1" >
+            <div id="col1">
+                <label for="vendedor">Vendedor</label><br/>
+                <input id="vendedor" name="vendedor" required="required" type="text"/>
+            </div>
+            <div id="col1" >
+                <label for="data_venda">Data de Venda</label><br/>
+                <input id="data_venda" name="data_venda" required="required" type="date"/> 
+            </div>
+            <div id="col1" >
+                <label for="desconto">% Desconto</label><br/>
+                <input id="desconto" name="desconto" required="required" type="number"/> 
+            </div>
+			<div id="col1" >
+                <label for="total">Total</label><br/>
+                <output id="total" name="total" type="number"/>293,40
+            </div>
+        </div>
+        <br/>
+        <h1></h1>
+        <div id="dados1">
+            <div id="col1">
+                <label for="cod_produto">Código do Produto</label><br/>
+                <input id="cod_produto" name="cod_produto" type="text"/>
+            </div>
+            <div id="col1" >
+                <label for="quantidade">Quantidade</label><br/>
+                <input id="quantidade" name="quantidade" type="number"/> 
+            </div>
+        </div>    
+        <div id="dados4" >
+            <button id="adicionar" type="button" onClick="">+ADICIONAR ITENS</button>
+            <button id="adicionar" type="button" onClick="">-REMOVER ITENS</button>
+            <h3 id="h3">Itens no Pedido:</h3>
+            <section >
+                <table id="tabela">
+                </table>
+            </section>
+        </div>
+        <div id="dados3" >
+            <input type="submit" onclick="cadastroPedido.php" value="Confirmar"/>
+            <a id="btn" href="javascript:close_window();">Cancelar</a>
+        </div>
+    </link>
+</form>
+</body>
+</html>
